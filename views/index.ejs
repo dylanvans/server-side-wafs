@@ -1,0 +1,24 @@
+<% include partials/header.ejs %>
+	<article class="view view-list">
+		<header>
+			<h1>List</h1>
+			<form class="readtime-form">
+				<fieldset>
+					<label for="readtime">Hoeveel minuten heb je om te lezen?</label>
+					<input type="number" id="readtime" class="readtime-input" required>
+				</fieldset>
+				<button type=submit>Vind artikelen</button>
+			</form>
+		</header>
+		<section class="container-articles">
+			<% data.forEach(function(article) { %>
+			<section class="media-item">
+				<header>
+					<a href="detail/<%= article.blocks.body[0].id %>" class="detail-link"><h2 class="list-title"><%= article.webTitle %></h2></a>
+					<div class="list-figure"><%- article.blocks.main.bodyHtml %></div>
+				</header>
+			</section>
+			<% }); %>
+		</section>
+	</article>
+<% include partials/footer.ejs %>
