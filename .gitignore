@@ -1,11 +1,7 @@
 # vendor packages
 /node_modules
 
-# project meta
-.idea
-.settings
-*.sublime-project
-*.sublime-workspace
+node_modules/
 
-# npm cruft
-npm-debug.log
+.DS_Store
+*.log

@@ -1,12 +1,14 @@
 {
   "name": "server-side-wafs",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "author": "",
-  "license": "",
+  "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "browserify public/js/script.js -o public/js/build.js",
+    "lint": "xo",
+    "test": "npm run build && npm run lint"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
@@ -15,5 +17,16 @@
     "express-session": "^1.15.1",
     "path": "^0.12.7",
     "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "space": false,
+    "esnext": false,
+    "ignore": [
+      "public/js/build.js"
+    ]
   }
 }
