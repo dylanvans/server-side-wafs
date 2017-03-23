@@ -4,22 +4,19 @@ var session = require('express-session');
 var request = require('request');
 var bodyParser = require('body-parser');
 
-
 var app = express();
 
 app.use(session({
-  secret: "jafjasfjkasf",
+  secret: "jafjasfjkazsf",
   resave: false,
   saveUninitialized: true
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-
 // Require Routes
 var indexRouter = require('./routes/index');
-var detailRouter = require('./routes/detail')
-var errRouter = require('./routes/error');
+var detailRouter = require('./routes/detail');
 
 // View engine
 app.set('view engine', 'ejs');
