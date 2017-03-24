@@ -7,6 +7,7 @@
 ```
 
 JS from 899b to 883b 😑
+
 CSS from 13.6KB to 9.7KB
 
 ### Sources
