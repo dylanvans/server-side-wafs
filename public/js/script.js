@@ -1,3 +1,7 @@
 (function () {
-	console.log('Ja shit, ik heb eigenlijk helemaal geen javascript voor bij de client');
+	var testMangle = function() {
+		console.log('Oeps, ik heb eigenlijk helemaal geen javascript voor bij de client');
+	}
+	
+	testMangle();
 })();
