@@ -7,7 +7,10 @@
   "scripts": {
     "start": "node server.js",
     "build": "browserify public/js/script.js -o public/js/build.js",
-    "test": "npm run build"
+    "minify-css": "uglifycss public/css/style.css > public/css/style.min.css",
+    "minify-js": "esmangle public/js/build.js > public/js/build.min.js",
+    "minify": "npm run minify-css && npm run minify-js",
+    "test": "npm run build && npm run minify"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
@@ -18,7 +21,9 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "browserify": "^14.1.0"
+    "browserify": "^14.1.0",
+    "esmangle": "^1.0.1",
+    "uglifycss": "0.0.25"
   },
   "xo": {
     "space": false,
