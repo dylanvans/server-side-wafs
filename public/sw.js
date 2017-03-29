@@ -1,6 +1,8 @@
 self.addEventListener('install', event => event.waitUntil(
     caches.open('tg-v1-core')
-        .then(cache => cache.add('/offline/'))
+		.then(cache => cache.addAll([
+			'/offline/'
+		]))
         .then(self.skipWaiting())
 ));
 
