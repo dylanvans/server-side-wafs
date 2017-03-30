@@ -2,13 +2,22 @@
 	<article class="view view-detail" id="view-detail">
 		<h1>Detail</h1>
 		<section class="detail-article">
-			<div class="detail-figure"><%- data.blocks.main.bodyHtml %></div>
+			<div class="detail-figure">
+				<figure>
+					<div class="container-img-5-3">
+						<img src="<%= data.blocks.main.elements[0].assets[2].file %>" alt="<%= data.blocks.main.elements[0].imageTypeData.alt %>">
+					</div>
+					<figcaption>
+						<span><%= data.blocks.main.elements[0].imageTypeData.caption %></span>
+						<span><%= data.blocks.main.elements[0].imageTypeData.credit %></span>
+					</figcaption>
+				</figure>	
+			</div>
 			<h2 class="detail-title"></h2>
 			<article class="detail-text">
 				<%- data.blocks.body[0].bodyHtml %>
 			</article>
 		</section>
-
 		<footer>
 			<fieldset class="component-rating">
 			    <legend>What do you think about this article?</legend>

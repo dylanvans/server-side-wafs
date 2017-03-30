@@ -15,7 +15,16 @@
 			<section class="media-item">
 				<header>
 					<a href="detail/<%= article.blocks.body[0].id %>" class="detail-link"><h2 class="list-title"><%= article.webTitle %></h2></a>
-					<div class="list-figure"><%- article.blocks.main.bodyHtml %></div>
+					<div class="list-figure">
+						<figure>
+							<div class="container-img-5-3">
+								<img src="<%= article.blocks.main.elements[0].assets[2].file %>" alt="">
+							</div>
+							<figcaption>
+								
+							</figcaption>
+						</figure>	
+					</div>
 				</header>
 			</section>
 			<% }); %>
