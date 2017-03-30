@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "browserify public/js/script.js -o public/js/build.js",
+    "sass": "node-sass public/css/style.scss public/css/style.css",
     "minify-css": "uglifycss public/css/style.css > public/css/style.min.css",
     "minify-js": "esmangle public/js/build.js > public/js/build.min.js",
     "minify": "npm run minify-css && npm run minify-js",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "browserify": "^14.1.0",
     "esmangle": "^1.0.1",
+    "node-sass": "^4.5.2",
     "uglifycss": "0.0.25"
   },
   "xo": {
