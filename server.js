@@ -4,7 +4,6 @@ var session = require('express-session');
 var request = require('request');
 var bodyParser = require('body-parser');
 var compression = require('compression');
-
 var app = express();
 
 app.use(compression());
