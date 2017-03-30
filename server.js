@@ -3,7 +3,6 @@ var path = require('path');
 var session = require('express-session');
 var request = require('request');
 var bodyParser = require('body-parser');
-
 var app = express();
 
 app.use(session({

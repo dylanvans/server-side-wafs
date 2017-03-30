@@ -1,6 +1,5 @@
 # Audit server-side-wafs
 ## Minification
-
 ``` json
 "minify-css": "uglifycss public/css/style.css > public/css/style.min.css",
 "minify-js": "esmangle public/js/build.js > public/js/build.min.js",
