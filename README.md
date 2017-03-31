@@ -65,9 +65,9 @@ All of the images received from the The Guardian API have an aspect ratio of 5:3
 ```
 ##### Result
 No space reserved
-![screenshot - no space reserved for image]()
+![screenshot - no space reserved for image](https://github.com/dylanvans/server-side-wafs/blob/dev/readme-img/no-space-reserved.png)
 Space reserved
-![screenshot - space reserved for image]()
+![screenshot - space reserved for image](https://github.com/dylanvans/server-side-wafs/blob/dev/readme-img/space-reserved.png)
 ### Lighthouse
 
 
