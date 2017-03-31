@@ -14,7 +14,7 @@ $light-red: lighten($main-red, 35%);
 $main-green: rgb(36, 207, 107);
 $light-green: lighten(rgb(36, 207, 107), 25%);
 $main-orange: #FCDA7B;
-$sub-orange: #F6A623;
+$sub-orange: #bd8a37;
 $light-orange: lighten($main-orange, 10%);
 $main-yellow: #FFFEB0;
 
@@ -159,7 +159,6 @@ button {
 	border: 0;
 	text-align: center;
 	color: $main-white;
-	font-weight: 300;
 	margin-top: $margin*.5;
 	transition: all .2s ease-in-out;
 	padding: $margin*.9 $margin*.7;
