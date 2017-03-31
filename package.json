@@ -11,7 +11,7 @@
     "minify-css": "uglifycss public/css/style.css > public/css/style.min.css",
     "minify-js": "esmangle public/js/build.js > public/js/build.min.js",
     "minify": "npm run minify-css && npm run minify-js",
-    "test": "npm run build && npm run minify"
+    "test": "npm run sass && npm run build && npm run minify"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
