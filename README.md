@@ -82,8 +82,16 @@ Space reserved
 ![screenshot - space reserved for image](https://github.com/dylanvans/server-side-wafs/blob/dev/readme-img/space-reserved.png)
 
 #### Gzip Compression
+With compression activated the requested files are zipped on the server and send to the browser. The browser then unzips the files and shows it to the user. This way we send smaller files to the user, which will be downloaded faster. To activate Gzip compression we have to add the following code to the server.js:
+```
+var compression = require('compression');
+app.use(compression());
+```
+
 ##### Without Compression - Load: 14s
-![Screenshot timeline - without minification](https://github.com/dylanvans/server-side-wafs/blob/dev/readme-img/normal.png)
+![Screenshot timeline - without Compression](https://github.com/dylanvans/server-side-wafs/blob/dev/readme-img/normal.png)
+##### With Compression - Load: 13s
+![Screenshot timeline - with Compression](https://github.com/dylanvans/server-side-wafs/blob/dev/readme-img/minify.png)
 
 #### No Javascript
 If there is a problem with the users Javascript in the browser the app is still usable. I disabled Javascript in the browser and the app runs just the same.
@@ -104,5 +112,8 @@ Via the plugin of lighthouse I could test my localhost:3000 on how 'progressive'
 - Working readtime filter
 
 ## Sources
+- https://www.npmjs.com/package/esmangle
+- https://github.com/fmarcia/UglifyCSS
+- https://www.npmjs.com/package/compression
 - https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
 - http://andmag.se/2012/10/responsive-images-how-to-prevent-reflow/
