@@ -105,8 +105,6 @@ Via the plugin of lighthouse I could test my localhost:3000 on how 'progressive'
 - Using modern protocols like HTTPS and HTTP/2
 - 1 element (the button) lacks sufficient contrast ratio (doubtful)
 
-[Link to report](https://github.com/dylanvans/server-side-wafs/lighthouse-report.html)
-
 ## Wishlist
 - Save article function
 - Working readtime filter
